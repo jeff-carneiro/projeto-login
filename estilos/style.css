@@ -38,9 +38,12 @@ section#login {
 
     background-color: white;
     height: 500px;
-    width: 250px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+
+    transition: width 1s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -54,4 +57,13 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }

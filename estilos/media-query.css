@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+:root {
+    --cor1: #d29672;
+    --cor2: #8C533E;
+    --cor3: #260f0f;
+    --cor4: #c00a0a;
+
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fonte-destaque: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Para Tablet */
+    
+    body {
+        background-image: linear-gradient(to top, #d29672, #8C533E);
+    }
+    
     section#login {
         width: 80vw;
     }
@@ -14,9 +29,43 @@
     section#login > div#formulario {
         float: right;
         width: 70%;
+    }    
+    
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+    
+    div#formulario > p {
+        font-size: 1em;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) { /* Para Telas Grandes */
+        
+    body {
+        background-image: linear-gradient(to top, #d29672, #8C533E);
+    }
     
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+    }
+    
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+    
+    div#formulario > p {
+        font-size: 1.2em;
+    }
 }
