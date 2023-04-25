@@ -68,7 +68,7 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
-form > div.campo {
+form > div#campo {
     display: block;
     margin: 5px 0px;
     height: 50%;
@@ -78,8 +78,25 @@ form > div.campo {
     border-radius: 5px;
 }
 
-form label {
+div#campo > label {
     display: none;
+}
+
+div#campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div#campo > input {
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    transform: translateY(-10px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 form > input[type=submit] {
