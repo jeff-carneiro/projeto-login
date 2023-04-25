@@ -13,7 +13,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Para Tablet */
     
     body {
-        background-image: linear-gradient(to top, #d29672, #8C533E);
+        background-image: linear-gradient(to bottom, #d29672 60%, #8C533E);
     }
     
     section#login {
@@ -43,7 +43,7 @@
 @media screen and (min-width: 992px) { /* Para Telas Grandes */
         
     body {
-        background-image: linear-gradient(to top, #d29672, #8C533E);
+        background-image: linear-gradient(to bottom, #d29672 60%, #8C533E);
     }
     
     section#login {
